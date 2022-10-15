@@ -1,0 +1,10 @@
+.header {
+    height: 250px;
+}
+
+.header h1 {
+    margin: 0;
+    text-align:start;
+    color: white;
+    font-size: 3rem;
+}
