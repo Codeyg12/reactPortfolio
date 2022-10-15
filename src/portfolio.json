@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Tech Talk",
+        "image": "https://user-images.githubusercontent.com/103782398/188053375-f53fe257-3518-4606-a542-41afd8dfc122.png",
+        "github": "https://github.com/Codeyg12/MVC-tech-blog",
+        "link": "https://safe-reaches-93630.herokuapp.com/"
+    },
+    {
+        "id": 2,
+        "title": "MySQL Employee Tracker",
+        "image": "https://user-images.githubusercontent.com/103782398/185019926-270d697f-0a98-401c-a438-5f9254420871.png",
+        "github": "https://github.com/Codeyg12/MySQL-employee-tracker",
+        "link": "https://drive.google.com/file/d/146Tm47Vuk9i1XhDXDfVfXm2nUeoxAy_4/view"
+    },
+    {
+        "id": 3,
+        "title": "ORM E-commerce",
+        "image": "https://user-images.githubusercontent.com/103782398/186040428-7752b9a3-bc54-46c0-9228-91220379ee32.png",
+        "github": "https://github.com/Codeyg12/ORM-E-commerce",
+        "link": "https://drive.google.com/file/d/1tDfVWBk5Ad54AIqF8rVydW3fVekvWF3I/view"
+    },
+    {
+        "id": 4,
+        "title": "Just Another Text Editor",
+        "image": "https://user-images.githubusercontent.com/103782398/194732359-a06854d8-035a-46b2-be14-efb4487b3301.png",
+        "github": "https://github.com/Codeyg12/PWA-text-editor",
+        "link": "https://safe-lowlands-30141.herokuapp.com/"
+    },
+    {
+        "id": 5,
+        "title": "Scribe",
+        "image": "https://raw.githubusercontent.com/pppreap/project1/main/assets/startpg.png",
+        "github": "https://github.com/pppreap/project1",
+        "link": "https://pppreap.github.io/project1/"
+    },
+    {
+        "id": 6,
+        "title": "Weather Dashboard",
+        "image": "https://user-images.githubusercontent.com/103782398/187039465-ee130959-123b-4e47-a3a5-1824d343dc98.png",
+        "github": "https://github.com/Codeyg12/Weather-Dashboard",
+        "link": "https://codeyg12.github.io/Weather-Dashboard/"
+    }
+]

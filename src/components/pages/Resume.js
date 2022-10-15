@@ -9,35 +9,63 @@ const styles = {
         fontSize: '2em',
         gridColumn: 'span 3' 
     },
+    subHeader: {
+        fontSize: '1.3em'
+    },
     link: {
         textDecoration: 'none',
         color: 'black',
         fontSize: '1em'
+    },
+    btn: {
+        marginTop: '2%',
+        background: 'white',
+        width: '60%',
+        height: '2.5em',
+        borderStyle: 'solid'
+    },
+    heading: {
+        textAlign: 'center'
     }
 }
 
 function hover(e) {
     e.target.style.color = 'red';
-    e.target.style.fontSize = '1.3em'
+    e.target.style.fontSize = '1.3em';
 }
 
 function unhover(e) {
     e.target.style.color = 'black';
-    e.target.style.fontSize = '1em'
+    e.target.style.fontSize = '1em';
+}
+
+function resumePDF() {
+    fetch('codeyResume.pdf').then(res => {
+        res.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob)
+            let newLink = document.createElement('a');
+            newLink.href = fileURL;
+            newLink.download = 'codeyResume.pdf'
+            newLink.click()
+        })
+    })
 }
 
 export default function Resume() {
     return (
         <section style={styles.container}>
             <h1 style={styles.header}>Resume</h1>
-            <div>
+            <div style={styles.heading}>
                 <h2>Codey Gallup</h2>
                 <p>Aspiring full stack developer</p>
-                <a style={styles.link} onMouseEnter={hover} onMouseLeave={unhover} href="https://my.indeed.com/p/codeyg-jl644zf">→ Click here for my Indeed resume ←</a>
+                <a style={styles.link} onMouseEnter={hover} onMouseLeave={unhover} href="https://my.indeed.com/p/codeyg-jl644zf">Click here to go to my Indeed resume</a>
+                <br></br>
+                <p>Or</p>
+                <button style={styles.btn}  onMouseEnter={hover} onMouseLeave={unhover} onClick={resumePDF}>Download here</button>
             </div>
 
             <div>
-                <h3>Technologies</h3>
+                <h3 style={styles.subHeader}>Technologies</h3>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -51,7 +79,7 @@ export default function Resume() {
             </div>
 
             <div>
-                <h3>Certificates</h3>
+                <h3  style={styles.subHeader}>Certificates</h3>
                 <ul>
                     <li>freeCodeCamp Responsive Web Design</li>
                     <li>Grasshopper: Learn to Code</li>
