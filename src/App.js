@@ -8,13 +8,14 @@ import './App.css';
 import Navbar from './components/Navigation';
 import Footer from './components/Footer';
 import AboutMe from './components/pages/About';
+import ContactMe from './components/pages/Contact';
 
 function App() {
   return (
     <div className='container'>
       <Header />
       <Navbar />
-      <AboutMe />
+      <ContactMe />
       <Footer />
     </div>
   );
