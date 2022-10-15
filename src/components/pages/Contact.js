@@ -94,7 +94,7 @@ export default function ContactMe() {
                     </div>
                 )}
                 <div>
-                    <button style={styles.btnStyle} type="submit">Send Message</button>
+                    <button style={styles.btnStyle} type="submit" onSubmit={contactSubmit}>Send Message</button>
                 </div>
             </form>
             

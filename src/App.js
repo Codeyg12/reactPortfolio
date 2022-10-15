@@ -9,13 +9,14 @@ import Navbar from './components/Navigation';
 import Footer from './components/Footer';
 import AboutMe from './components/pages/About';
 import ContactMe from './components/pages/Contact';
+import Resume from './components/pages/Resume';
 
 function App() {
   return (
     <div className='container'>
       <Header />
       <Navbar />
-      <ContactMe />
+      <Resume />
       <Footer />
     </div>
   );
