@@ -1,0 +1,17 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+.list {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.list a {
+    font-size: 4rem;
+    color: #111893;
+}

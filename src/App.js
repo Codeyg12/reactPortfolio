@@ -5,6 +5,7 @@ import Header from './components/Header';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navigation';
+import Footer from './components/Footer';
 
 const styles = {
   divStyle: {
@@ -18,6 +19,7 @@ function App() {
     <div style={styles.divStyle}>
       <Header />
       <Navbar />
+      <Footer />
     </div>
   );
 }
