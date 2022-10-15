@@ -14,7 +14,7 @@ export default function Footer() {
         <footer style={styles.footerStyle} className='footer'>
             <ul className="list">
                 <a href="https://github.com/Codeyg12" target='_blank'><FontAwesomeIcon icon={faGithubSquare} className='icon' /></a> 
-                <a href="www.linkedin.com/in/codey-gallup" target="_blank"><FontAwesomeIcon icon={faLinkedin} className='icon' /></a>
+                <a href="https://linkedin.com/in/codey-gallup" target="_blank"><FontAwesomeIcon icon={faLinkedin} className='icon' /></a>
                 <a href="https://stackoverflow.com/users/18817205/codeyg12" target="_blank"><FontAwesomeIcon icon={faStackOverflow} className='icon' /></a>
             </ul>
         </footer>
