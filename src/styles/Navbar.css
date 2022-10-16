@@ -1,16 +1,19 @@
 .navbar {
-    display: flex;
+  display: flex;
 }
 
 .navbar a {
-    color: white;
-    font-size: 1.75rem;
-    text-decoration: none;
-    margin: 5px;
-    line-height: 3;
+  color: white;
+  font-size: 1.75rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
 }
 
 .navbar a:hover {
-    color: black;
-    text-transform: uppercase;
+  color: #111893;
+  text-transform: uppercase;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
