@@ -1,71 +1,59 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
+
+# React Portfolio
+
+### Description
+
+Just a standard portfolio using react.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  <p align="right"><a href="#readme-top">(Return to top)</a></p>
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+[Description](#description)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Link](#link)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Usage](#usage)
 
-### `npm test`
+[Technologies](#technologies)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Contribution](#contribution)
 
-### `npm run build`
+[Testing](#test)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Link
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To see the page click [here](https://codeyg12.github.io/reactPortfolio/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <p align="right"><a href="#readme-top">(Return to top)</a></p>
+  
+  ### Technologies
 
-### `npm run eject`
+Below are the languages and frameworks/libraries used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  <p align="right"><a href="#readme-top">(Return to top)</a></p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Contribution
 
-## Learn More
+Code can always be improved and if you have a suggestion to improve this project then fork the repo and create a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <p align="right"><a href="#readme-top">(Return to top)</a></p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Testing
 
-### Code Splitting
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  <p align="right"><a href="#readme-top">(Return to top)</a></p>
 
-### Analyzing the Bundle Size
+#### Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To see more of my work check my [Github](https://github.com/Codeyg12). For futher questions you can reach me at codey.gallup@gmail.com.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# reactPortfolio
+  <p align="right"><a href="#readme-top">(Return to top)</a></p>
