@@ -62,5 +62,8 @@ To see more of my work check my [Github](https://github.com/Codeyg12). For futhe
 
 * Add certificates section
 * Make projects a picture when hovered shows title and tech
-* use bootstrap
+* transition to bootstrap
 * glitch effect
+* change "title"
+* enable messages
+* logo color invert issue
