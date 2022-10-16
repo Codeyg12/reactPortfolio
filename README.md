@@ -57,3 +57,10 @@ npm test
 To see more of my work check my [Github](https://github.com/Codeyg12). For futher questions you can reach me at codey.gallup@gmail.com.
 
   <p align="right"><a href="#readme-top">(Return to top)</a></p>
+
+#### ToBe Finished
+
+* Add certificates section
+* Make projects a picture when hovered shows title and tech
+* use bootstrap
+* glitch effect
