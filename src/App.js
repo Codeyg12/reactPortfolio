@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import './App.css'
 
@@ -13,11 +13,30 @@ import Resume from './components/pages/Resume';
 import Portfolio from './components/pages/Portfolio';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("about");
+
+  function loadPage() {
+    switch (currentPage) {
+      case "contact":
+        return <ContactMe />;
+      case "portfolio":
+        return <Portfolio />;
+      case "resume":
+        return <Resume />;
+      default:
+        return <AboutMe />;
+    }
+  }
+
+  function changePage(page) {
+    setCurrentPage(page)
+  }
+
   return (
     <div className='container'>
       <Header />
-      <Navbar />
-      <Portfolio />
+      <Navbar currentPage={currentPage} changePage={changePage} />
+      {loadPage()}
       <Footer />
     </div>
   );

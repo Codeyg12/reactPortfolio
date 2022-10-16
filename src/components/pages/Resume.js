@@ -3,11 +3,12 @@ import React from "react";
 const styles = {
     container: {
         display: 'grid',
-        margin: '0 -5% 0 2%'
+        margin: '0 -5% 5% 2%'
     },
     header: {
         fontSize: '2em',
-        gridColumn: 'span 3' 
+        gridColumn: 'span 3',
+        marginLeft: '14%'
     },
     subHeader: {
         fontSize: '1.3em'

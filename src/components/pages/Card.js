@@ -44,8 +44,8 @@ export default function Card(props) {
         <img style={styles.img} src={props.image} onMouseEnter={showDetails} onMouseLeave={hideDetails}></img>
       </div>
       <div>
-        <a style={styles.icon} href={props.github}><FontAwesomeIcon icon={faGithub} /></a>
-        <a style={styles.icon} href={props.link}><FontAwesomeIcon icon={faLink} /></a>
+        <a style={styles.icon} href={props.github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+        <a style={styles.icon} href={props.link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLink} /></a>
       </div>
     </div>
   );

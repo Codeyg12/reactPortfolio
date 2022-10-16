@@ -9,13 +9,13 @@ const styles = {
     },
 };
 
-export default function Navbar() {
+export default function Navbar({ changePage }) {
     return (
         <nav style={styles.navbarStyle} className='navbar'>
-            <a href="/">About Me</a>
-            <a href="/">Portfolio</a>
-            <a href="/">Contact</a>
-            <a href="/">Resume</a>
+            <a href="#about" onClick={() => changePage('about')}>About Me</a>
+            <a href="#portfolio" onClick={() => changePage('portfolio')}>Portfolio</a>
+            <a href="#contact" onClick={() => changePage('contact')}>Contact</a>
+            <a href="#resume" onClick={() => changePage('resume')}>Resume</a>
         </nav>
     );
 }

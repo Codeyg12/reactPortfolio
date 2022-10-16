@@ -4,7 +4,7 @@ import ProfilePicture from "../../assets/me.jpg";
 const styles = {
   headerStyle: {
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     marginLeft: "10%",
     fontSize: "3rem",
     width: "100%",

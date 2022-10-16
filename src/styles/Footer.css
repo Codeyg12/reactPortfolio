@@ -15,3 +15,9 @@
     font-size: 3.5rem;
     color: #111893;
 }
+
+.list a:hover {
+    background-color: #111893;
+    color: white;
+    padding: 0;
+}
