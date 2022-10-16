@@ -23,7 +23,6 @@ const styles = {
     background: "white",
     width: "60%",
     height: "2.5em",
-    borderStyle: "solid",
   },
   heading: {
     textAlign: "center",
@@ -66,6 +65,7 @@ export default function Resume() {
           onMouseEnter={hover}
           onMouseLeave={unhover}
           href="https://my.indeed.com/p/codeyg-jl644zf"
+          target="_blank"
         >
           Click here to go to my Indeed resume
         </a>
