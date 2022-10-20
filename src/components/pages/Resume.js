@@ -23,6 +23,7 @@ const styles = {
     background: "white",
     width: "60%",
     height: "2.5em",
+    borderStyle: 'none'
   },
   heading: {
     textAlign: "center",

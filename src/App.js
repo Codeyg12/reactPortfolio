@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -9,6 +9,9 @@ import Project from "./components/Project";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    document.title = "Codey's Portfolio";
+  }, []);
   const [currentPage, setCurrentPage] = useState("about");
 
   // Switch statment to render the clicked on page
