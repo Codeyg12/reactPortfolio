@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { validateEmail } from "../utils/helpers.js";
+import emailjs from "@emailjs/browser";
 
 export default function ContactMe() {
+  const form = useRef();
   // Starts the contact form blank
   const [contactFormState, setContactFormState] = useState({
     name: "",
@@ -34,10 +36,6 @@ export default function ContactMe() {
         [e.target.name]: e.target.value,
       });
     }
-  }
-
-  function contactSubmit(e) {
-    e.preventDefault();
   }
 
   const styles = {
@@ -78,10 +76,30 @@ export default function ContactMe() {
     },
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_r9ozccg",
+        "template_i728ryi",
+        e.target,
+        "cRjguA3pkusSgJPh5"
+      )
+      .then(
+        (result) => {
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div style={styles.containStyle}>
       <h1 style={styles.headerStyle}>Contact Me</h1>
-      <form style={styles.formStyle}>
+      <form style={styles.formStyle} ref={form} onSubmit={sendEmail}>
         <div>
           <label for="name">Name:</label>
           <br></br>
@@ -120,13 +138,7 @@ export default function ContactMe() {
           </div>
         )}
         <div>
-          <button
-            style={styles.btnStyle}
-            type="submit"
-            onSubmit={contactSubmit}
-          >
-            Send Message
-          </button>
+          <input style={styles.btnStyle} type="submit" value="Send Message" />
         </div>
       </form>
     </div>

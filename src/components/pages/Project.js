@@ -1,6 +1,6 @@
 import React from "react";
-import portfolio from "../portfolio.json";
-import Card from "./pages/Card";
+import portfolio from "../../portfolio.json";
+import Card from "./Card";
 
 const styles = {
   grid: {

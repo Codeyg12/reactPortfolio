@@ -25,7 +25,7 @@ export default function AboutMe() {
   return (
     <section>
       <h1 style={styles.headerStyle}>About Me</h1>
-      <img src={ProfilePicture} style={styles.pictureStyle}></img>
+      <img src={ProfilePicture} alt="me" style={styles.pictureStyle}></img>
       <div>
         <p style={styles.pStyle}>
           I was raised in San Diego but for the past decade I've been in

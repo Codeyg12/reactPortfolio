@@ -45,6 +45,7 @@ export default function Card(props) {
         <img
           style={styles.img}
           src={props.image}
+          alt="project"
           onMouseEnter={showDetails}
           onMouseLeave={hideDetails}
         ></img>

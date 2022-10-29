@@ -67,6 +67,7 @@ export default function Resume() {
           onMouseLeave={unhover}
           href="https://my.indeed.com/p/codeyg-jl644zf"
           target="_blank"
+          rel="noreferrer"
         >
           Click here to go to my Indeed resume
         </a>
