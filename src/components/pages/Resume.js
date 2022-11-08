@@ -1,35 +1,5 @@
 import React from "react";
 
-const styles = {
-  container: {
-    display: "grid",
-    margin: "0 -5% 5% 2%",
-  },
-  header: {
-    fontSize: "2em",
-    gridColumn: "span 3",
-    marginLeft: "14%",
-  },
-  subHeader: {
-    fontSize: "1.3em",
-  },
-  link: {
-    textDecoration: "none",
-    color: "black",
-    fontSize: "1em",
-  },
-  btn: {
-    marginTop: "2%",
-    background: "white",
-    width: "60%",
-    height: "2.5em",
-    borderStyle: 'none'
-  },
-  heading: {
-    textAlign: "center",
-  },
-};
-
 // These two functions act as a "hover" 
 function hover(e) {
   e.target.style.color = "red";
@@ -56,13 +26,13 @@ function resumePDF() {
 
 export default function Resume() {
   return (
-    <section style={styles.container}>
-      <h1 style={styles.header}>Resume</h1>
-      <div style={styles.heading}>
+    <section className="resumeContainer">
+      <h1 className="resumeHead">Resume</h1>
+      <div className="resumeCenter">
         <h2>Codey Gallup</h2>
         <p>Aspiring full stack developer</p>
         <a
-          style={styles.link}
+          className="resumeLink"
           onMouseEnter={hover}
           onMouseLeave={unhover}
           href="https://my.indeed.com/p/codeyg-jl644zf"
@@ -74,7 +44,7 @@ export default function Resume() {
         <br></br>
         <p>Or</p>
         <button
-          style={styles.btn}
+          className="resumeBtn"
           onMouseEnter={hover}
           onMouseLeave={unhover}
           onClick={resumePDF}
@@ -84,7 +54,7 @@ export default function Resume() {
       </div>
 
       <div>
-        <h3 style={styles.subHeader}>Technologies</h3>
+        <h3 className="resumeSubHead">Technologies</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -98,7 +68,7 @@ export default function Resume() {
       </div>
 
       <div>
-        <h3 style={styles.subHeader}>Certificates</h3>
+        <h3 className="resumeSubHead">Certificates</h3>
         <ul>
           <li>freeCodeCamp Responsive Web Design</li>
           <li>Grasshopper: Learn to Code</li>

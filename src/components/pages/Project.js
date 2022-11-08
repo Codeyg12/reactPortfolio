@@ -2,25 +2,11 @@ import React from "react";
 import portfolio from "../../portfolio.json";
 import Card from "./Card";
 
-const styles = {
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "2%",
-    textAlign: "center",
-    marginBottom: "10%",
-  },
-  head: {
-    fontSize: "2em",
-    textAlign: "center",
-  },
-};
-
 export default function Portfolio() {
   return (
     <section>
-      <h1 style={styles.head}>Projects</h1>
-      <div style={styles.grid}>
+      <h1 className="projectHead">Projects</h1>
+      <div className="projectContainer">
         {portfolio.map((portfolio) => (
           <Card
             key={portfolio.id}

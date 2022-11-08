@@ -38,44 +38,6 @@ export default function ContactMe() {
     }
   }
 
-  const styles = {
-    containStyle: {
-      display: "flex",
-      flexWrap: "wrap",
-      textAlign: "center",
-      fontSize: "1.2em",
-    },
-    headerStyle: {
-      width: "100%",
-      fontSize: "2em",
-    },
-    formStyle: {
-      width: "80%",
-      marginLeft: "10%",
-      overflow: "hidden",
-      marginBottom: "1.5%",
-    },
-    textStyle: {
-      width: "80%",
-      marginLeft: "10%",
-      overflow: "hidden",
-      height: "20em",
-      marginBottom: "3%",
-    },
-    pStyle: {
-      color: "red",
-    },
-    btnStyle: {
-      borderRadius: "10px",
-      fontSize: "1.2rem",
-      width: "25%",
-      marginBottom: "5%",
-      height: "2em",
-      borderStyle: "ridge",
-      backgroundColor: "white",
-    },
-  };
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -97,14 +59,14 @@ export default function ContactMe() {
   };
 
   return (
-    <div style={styles.containStyle}>
-      <h1 style={styles.headerStyle}>Contact Me</h1>
-      <form style={styles.formStyle} ref={form} onSubmit={sendEmail}>
+    <div className="contactContainer">
+      <h1 className="contactHead">Contact Me</h1>
+      <form className="contactForm" ref={form} onSubmit={sendEmail}>
         <div>
           <label for="name">Name:</label>
           <br></br>
           <input
-            style={styles.formStyle}
+            className="contactForm"
             type="text"
             name="name"
             defaultValue={name}
@@ -115,7 +77,7 @@ export default function ContactMe() {
           <label for="email">Email:</label>
           <br></br>
           <input
-            style={styles.formStyle}
+            className="contactForm"
             type="email"
             name="email"
             defaultValue={email}
@@ -126,7 +88,7 @@ export default function ContactMe() {
           <label for="message">Message:</label>
           <br></br>
           <textarea
-            style={styles.textStyle}
+            className="contactText"
             name="message"
             defaultValue={message}
             onBlur={handleContact}
@@ -134,11 +96,11 @@ export default function ContactMe() {
         </div>
         {errorMessage && (
           <div>
-            <p style={styles.pStyle}>{errorMessage}</p>
+            <p className="contactErr">{errorMessage}</p>
           </div>
         )}
         <div>
-          <input style={styles.btnStyle} type="submit" value="Send Message" />
+          <input className="contactBtn" type="submit" value="Send Message" />
         </div>
       </form>
     </div>

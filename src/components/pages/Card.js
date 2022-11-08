@@ -3,25 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-const styles = {
-  border: {
-    width: "90%",
-  },
-  img: {
-    width: "85%",
-    height: "85%",
-  },
-  title: {
-    fontSize: "1.2em",
-    fontWeight: "bold",
-  },
-  icon: {
-    fontSize: "2em",
-    margin: "0 5%",
-    color: "black",
-  },
-};
-
 export default function Card(props) {
   // Used to expand pictures, later will be upgraded
   function showDetails(e) {
@@ -36,14 +17,14 @@ export default function Card(props) {
   }
 
   return (
-    <div style={styles.border}>
+    <div className="cardBorder">
       <div>
         <h2>{props.name}</h2>
       </div>
       <div>
-        <figcaption style={styles.title}>{props.title}</figcaption>
+        <figcaption className="cardTitle">{props.title}</figcaption>
         <img
-          style={styles.img}
+          className="cardImg"
           src={props.image}
           alt="project"
           onMouseEnter={showDetails}
@@ -52,7 +33,7 @@ export default function Card(props) {
       </div>
       <div>
         <a
-          style={styles.icon}
+          className="cardIcon"
           href={props.github}
           target="_blank"
           rel="noreferrer"
@@ -60,7 +41,7 @@ export default function Card(props) {
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
-          style={styles.icon}
+          className="cardIcon"
           href={props.link}
           target="_blank"
           rel="noreferrer"

@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithubSquare,
@@ -7,15 +6,9 @@ import {
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 
-const styles = {
-  footerStyle: {
-    justifyContent: "space-around",
-  },
-};
-
 export default function Footer() {
   return (
-    <footer style={styles.footerStyle} className="footer">
+    <footer className="footer">
       <ul className="list">
         <a
           href="https://github.com/Codeyg12"
