@@ -1,20 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Navbar({ changePage }) {
+export default function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#about" onClick={() => changePage("about")}>
-        About Me
-      </a>
-      <a href="#portfolio" onClick={() => changePage("portfolio")}>
-        Portfolio
-      </a>
-      <a href="#contact" onClick={() => changePage("contact")}>
-        Contact
-      </a>
-      <a href="#resume" onClick={() => changePage("resume")}>
-        Resume
-      </a>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+      <Link to="/portfolio">Projects</Link>
+      <Link to="/resume">Resume</Link>
     </nav>
   );
 }

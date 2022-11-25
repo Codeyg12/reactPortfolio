@@ -1,39 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navigation";
 import Footer from "./components/Footer";
-import { About, Contact, Project, Resume } from './components/pages'
+import { About, Contact, Project, Resume } from "./components/pages";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   useEffect(() => {
     document.title = "Codey's Portfolio";
   }, []);
-  const [currentPage, setCurrentPage] = useState("about");
-
-  // Switch statment to render the clicked on page
-  function loadPage() {
-    switch (currentPage) {
-      case "contact":
-        return <Contact />;
-      case "portfolio":
-        return <Project />;
-      case "resume":
-        return <Resume />;
-      default:
-        return <About />;
-    }
-  }
-
-  function changePage(page) {
-    setCurrentPage(page);
-  }
 
   return (
     <div className="container">
       <Header />
-      <Navbar currentPage={currentPage} changePage={changePage} />
-      {loadPage()}
+      <Navbar />
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Project />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
       <Footer />
     </div>
   );
